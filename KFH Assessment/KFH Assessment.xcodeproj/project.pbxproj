@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E413AADA2A83BB5C00048DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AAD92A83BB5C00048DEF /* AppDelegate.swift */; };
+		E413AADC2A83BB5C00048DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AADB2A83BB5C00048DEF /* SceneDelegate.swift */; };
+		E413AAE12A83BB5C00048DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E413AADF2A83BB5C00048DEF /* Main.storyboard */; };
+		E413AAE32A83BB5E00048DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E413AAE22A83BB5E00048DEF /* Assets.xcassets */; };
+		E413AAE62A83BB5E00048DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E413AAE42A83BB5E00048DEF /* LaunchScreen.storyboard */; };
+		E413AAF62A83BED800048DEF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AAF52A83BED800048DEF /* UIViewController+Extension.swift */; };
+		E413AAF92A83BF1B00048DEF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AAF82A83BF1B00048DEF /* Constants.swift */; };
+		E413AAFF2A83BFA900048DEF /* IbanValidatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AAFD2A83BFA900048DEF /* IbanValidatorViewController.swift */; };
+		E413AB012A83C05300048DEF /* IbanValidatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB002A83C05300048DEF /* IbanValidatorViewModel.swift */; };
+		E413AB032A83C07100048DEF /* IbanValidatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB022A83C07100048DEF /* IbanValidatorModel.swift */; };
+		E413AB052A83C09900048DEF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB042A83C09900048DEF /* APIService.swift */; };
+		E413AB082A83C2E700048DEF /* Iban_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB072A83C2E700048DEF /* Iban_data.swift */; };
+		E413AB0A2A83C41700048DEF /* Bank_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB092A83C41700048DEF /* Bank_Data.swift */; };
+		E413AB112A83F65200048DEF /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB102A83F65200048DEF /* CurrencyViewController.swift */; };
+		E413AB132A83F66300048DEF /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB122A83F66300048DEF /* CurrencyViewModel.swift */; };
+		E413AB152A83F66E00048DEF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB142A83F66E00048DEF /* Currency.swift */; };
+		E413AB182A83F93F00048DEF /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB172A83F93F00048DEF /* CurrencyTableViewCell.swift */; };
+		E413AB1A2A83FE9D00048DEF /* CurrencyRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E413AB192A83FE9D00048DEF /* CurrencyRates.swift */; };
+		E42367152A840ADC00FBB758 /* certificateFile.cer in Resources */ = {isa = PBXBuildFile; fileRef = E42367142A840ADC00FBB758 /* certificateFile.cer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E413AAD62A83BB5C00048DEF /* KFH Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KFH Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E413AAD92A83BB5C00048DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E413AADB2A83BB5C00048DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E413AAE02A83BB5C00048DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E413AAE22A83BB5E00048DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E413AAE52A83BB5E00048DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E413AAE72A83BB5E00048DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E413AAF52A83BED800048DEF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E413AAF82A83BF1B00048DEF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E413AAFD2A83BFA900048DEF /* IbanValidatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IbanValidatorViewController.swift; sourceTree = "<group>"; };
+		E413AB002A83C05300048DEF /* IbanValidatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanValidatorViewModel.swift; sourceTree = "<group>"; };
+		E413AB022A83C07100048DEF /* IbanValidatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbanValidatorModel.swift; sourceTree = "<group>"; };
+		E413AB042A83C09900048DEF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E413AB072A83C2E700048DEF /* Iban_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iban_data.swift; sourceTree = "<group>"; };
+		E413AB092A83C41700048DEF /* Bank_Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_Data.swift; sourceTree = "<group>"; };
+		E413AB102A83F65200048DEF /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		E413AB122A83F66300048DEF /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		E413AB142A83F66E00048DEF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		E413AB172A83F93F00048DEF /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		E413AB192A83FE9D00048DEF /* CurrencyRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRates.swift; sourceTree = "<group>"; };
+		E42367142A840ADC00FBB758 /* certificateFile.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = certificateFile.cer; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E413AAD32A83BB5C00048DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E413AACD2A83BB5C00048DEF = {
+			isa = PBXGroup;
+			children = (
+				E413AAD82A83BB5C00048DEF /* KFH Assessment */,
+				E413AAD72A83BB5C00048DEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E413AAD72A83BB5C00048DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E413AAD62A83BB5C00048DEF /* KFH Assessment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E413AAD82A83BB5C00048DEF /* KFH Assessment */ = {
+			isa = PBXGroup;
+			children = (
+				E42367142A840ADC00FBB758 /* certificateFile.cer */,
+				E413AAD92A83BB5C00048DEF /* AppDelegate.swift */,
+				E413AADB2A83BB5C00048DEF /* SceneDelegate.swift */,
+				E413AAF32A83BEA700048DEF /* Utility */,
+				E413AAED2A83BCCD00048DEF /* App */,
+				E413AADF2A83BB5C00048DEF /* Main.storyboard */,
+				E413AAE22A83BB5E00048DEF /* Assets.xcassets */,
+				E413AAE42A83BB5E00048DEF /* LaunchScreen.storyboard */,
+				E413AAE72A83BB5E00048DEF /* Info.plist */,
+			);
+			path = "KFH Assessment";
+			sourceTree = "<group>";
+		};
+		E413AAED2A83BCCD00048DEF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB0C2A83F42D00048DEF /* CurrencyList */,
+				E413AAFA2A83BFA900048DEF /* IbanValidatorViewController */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E413AAF32A83BEA700048DEF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB062A83C0A000048DEF /* APIService */,
+				E413AAF72A83BF0000048DEF /* Constant */,
+				E413AAF42A83BEC600048DEF /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E413AAF42A83BEC600048DEF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E413AAF52A83BED800048DEF /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E413AAF72A83BF0000048DEF /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E413AAF82A83BF1B00048DEF /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E413AAFA2A83BFA900048DEF /* IbanValidatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E413AAFC2A83BFA900048DEF /* Controller */,
+				E413AAFB2A83BFA900048DEF /* ViewModel */,
+				E413AAFE2A83BFA900048DEF /* Model */,
+			);
+			path = IbanValidatorViewController;
+			sourceTree = "<group>";
+		};
+		E413AAFB2A83BFA900048DEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB002A83C05300048DEF /* IbanValidatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E413AAFC2A83BFA900048DEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E413AAFD2A83BFA900048DEF /* IbanValidatorViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E413AAFE2A83BFA900048DEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB022A83C07100048DEF /* IbanValidatorModel.swift */,
+				E413AB072A83C2E700048DEF /* Iban_data.swift */,
+				E413AB092A83C41700048DEF /* Bank_Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E413AB062A83C0A000048DEF /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB042A83C09900048DEF /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		E413AB0C2A83F42D00048DEF /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB0D2A83F61400048DEF /* Controller */,
+				E413AB162A83F91F00048DEF /* View */,
+				E413AB0E2A83F61F00048DEF /* ViewModel */,
+				E413AB0F2A83F62700048DEF /* Model */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		E413AB0D2A83F61400048DEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB102A83F65200048DEF /* CurrencyViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E413AB0E2A83F61F00048DEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB122A83F66300048DEF /* CurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E413AB0F2A83F62700048DEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB142A83F66E00048DEF /* Currency.swift */,
+				E413AB192A83FE9D00048DEF /* CurrencyRates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E413AB162A83F91F00048DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E413AB172A83F93F00048DEF /* CurrencyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E413AAD52A83BB5C00048DEF /* KFH Assessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E413AAEA2A83BB5E00048DEF /* Build configuration list for PBXNativeTarget "KFH Assessment" */;
+			buildPhases = (
+				E413AAD22A83BB5C00048DEF /* Sources */,
+				E413AAD32A83BB5C00048DEF /* Frameworks */,
+				E413AAD42A83BB5C00048DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KFH Assessment";
+			productName = "KFH Assessment";
+			productReference = E413AAD62A83BB5C00048DEF /* KFH Assessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E413AACE2A83BB5C00048DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E413AAD52A83BB5C00048DEF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = E413AAD12A83BB5C00048DEF /* Build configuration list for PBXProject "KFH Assessment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E413AACD2A83BB5C00048DEF;
+			productRefGroup = E413AAD72A83BB5C00048DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E413AAD52A83BB5C00048DEF /* KFH Assessment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E413AAD42A83BB5C00048DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E413AAE62A83BB5E00048DEF /* LaunchScreen.storyboard in Resources */,
+				E413AAE32A83BB5E00048DEF /* Assets.xcassets in Resources */,
+				E42367152A840ADC00FBB758 /* certificateFile.cer in Resources */,
+				E413AAE12A83BB5C00048DEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E413AAD22A83BB5C00048DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E413AB182A83F93F00048DEF /* CurrencyTableViewCell.swift in Sources */,
+				E413AB032A83C07100048DEF /* IbanValidatorModel.swift in Sources */,
+				E413AB132A83F66300048DEF /* CurrencyViewModel.swift in Sources */,
+				E413AB1A2A83FE9D00048DEF /* CurrencyRates.swift in Sources */,
+				E413AAF92A83BF1B00048DEF /* Constants.swift in Sources */,
+				E413AAFF2A83BFA900048DEF /* IbanValidatorViewController.swift in Sources */,
+				E413AB0A2A83C41700048DEF /* Bank_Data.swift in Sources */,
+				E413AB082A83C2E700048DEF /* Iban_data.swift in Sources */,
+				E413AADA2A83BB5C00048DEF /* AppDelegate.swift in Sources */,
+				E413AB012A83C05300048DEF /* IbanValidatorViewModel.swift in Sources */,
+				E413AB152A83F66E00048DEF /* Currency.swift in Sources */,
+				E413AAF62A83BED800048DEF /* UIViewController+Extension.swift in Sources */,
+				E413AB052A83C09900048DEF /* APIService.swift in Sources */,
+				E413AB112A83F65200048DEF /* CurrencyViewController.swift in Sources */,
+				E413AADC2A83BB5C00048DEF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E413AADF2A83BB5C00048DEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E413AAE02A83BB5C00048DEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E413AAE42A83BB5E00048DEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E413AAE52A83BB5E00048DEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E413AAE82A83BB5E00048DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E413AAE92A83BB5E00048DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E413AAEB2A83BB5E00048DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KFH Assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.KFH-Assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E413AAEC2A83BB5E00048DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KFH Assessment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.KFH-Assessment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E413AAD12A83BB5C00048DEF /* Build configuration list for PBXProject "KFH Assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E413AAE82A83BB5E00048DEF /* Debug */,
+				E413AAE92A83BB5E00048DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E413AAEA2A83BB5E00048DEF /* Build configuration list for PBXNativeTarget "KFH Assessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E413AAEB2A83BB5E00048DEF /* Debug */,
+				E413AAEC2A83BB5E00048DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E413AACE2A83BB5C00048DEF /* Project object */;
+}
